@@ -1,0 +1,7 @@
+2018-06-04 20:15:39,737 INFO Starting Script with configuration file: config.ini
+2018-06-04 20:15:39,737 INFO Starting Script with configuration file: config.ini
+2018-06-04 20:15:40,956 INFO Total data: 25377
+2018-06-04 20:15:40,956 INFO Pages from initial count-request: 254
+2018-06-04 20:15:41,398 INFO https://scihub.copernicus.eu/dhus/search?q=ingestiondate:[2018-06-02T20:15:03.000Z%20TO%20NOW]&format=json&rows=100&start=0
+2018-06-04 20:15:41,417 INFO Starting Script with configuration file: data_uris.ini
+2018-06-04 20:15:41,417 INFO Starting Script with data list from file: data_uris.ini

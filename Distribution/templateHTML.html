@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <script type="text/javascript" src='ElasticSearchHandler.js'></script>
+    <script type="text/javascript" src='elasticsearch.js'></script>
+    <script type="text/javascript">
+        //var elasticsearch = require('elasticsearch');
+        var client = new elasticsearch.Client({
+            nodesToHostCallback: function (nodes) {
+
+                return _.transform(nodes, function (nodeList, node, id) {
+                    var port = node.http_address.match(/:(\d+)/)[1];
+                    nodeList.push({
+                        host: 'esproxy.example.com',
+                        port: 80,
+                        query: {
+                            nodeHostname: node.hostname,
+                            nodePort: port
+                        }
+                    });
+                }, []);
+            }
+        });
+
+        var test = search(client, "S1B_IW_RAW__0SDV_20180605T171913_20180605T171945_011241_014A1A_04BA");
+        document.write(test)
+        //create request against elastic search backend
+
+    </script>
+    <script type="application/ld+json" id="test">
+    {
+      "@context": "http://schema.org",
+      "@type": "Book",
+      "name": "Semantic Web Primer (First Edition)",
+      "publisher": "Linked Data Tools",
+      "inLanguage": "English",
+      "bookFormat":
+      {
+         "@type": "EBook"
+      },
+      "offers":
+      {
+         "@type": "Offer",
+         "price": "2.95",
+         "priceCurrency": "USD",
+      },
+    }
+    </script>
+</head>
+<body>
+
+
+
+</body>
+</html>

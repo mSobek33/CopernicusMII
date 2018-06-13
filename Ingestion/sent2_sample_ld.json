@@ -1,0 +1,137 @@
+{
+  "_index": "copernicus",
+  "_type": "metadata",
+  "_id": "S2B_MSIL1C_20180516T040539_N0206_R047_T51WXU_20180516T070218",
+  "_score": 1,
+  "_source": {
+    "@context": {
+      "id": "@id",
+      "type": "@type",
+      "gj": "https://purl.org/geojson/vocab#",
+      "eop": "http://www.opengis.net/eo-geojson/1.0/",
+      "dc": "http://purl.org/dc/terms/",
+      "openAccessHub": "https://scihub.copernicus.eu/",
+      "codeDE": "https://code-de.org/",
+      "bbox": "gj:bbox",
+      "geometry": "gj:geometry",
+      "properties": "gj:properties",
+      "Properties": "gj:Properties",
+      "coordinates": "gj:coordinates",
+      "AcquisitionInformation": "eop:AcquisitionInformation",
+      "acquisitionInformation": "eop:acquisitionInformation",
+      "date": "dc:date",
+      "title": "dc:title",
+      "identifier": "dc:identifier",
+      "platform": "eop:platform",
+      "Platform": "eop:Platform",
+      "platformSerialIdentifier": "eop:platformSerialIdentifier",
+      "instrument": "eop:instrument",
+      "Instrument": "eop:Instrument",
+      "instrumentShortName": "eop:instrumentShortName",
+      "acquisitionParameters": "eop:acquisitionParameters",
+      "AcquisitionParameters": "eop:AcquisitionParameters",
+      "operationalMode": "eop:operationalMode",
+      "orbitDirection": "eop:orbitDirection",
+      "orbitNumber": "eop:orbitNumber",
+      "DESCENDING": "eop:DESCENDING",
+      "ProductInformation": "eop:ProductInformation",
+      "productInformation": "eop:productInformation",
+      "productType": "eop:productType",
+      "processingLevel": "eop:processingLevel",
+      "size": "eop:size",
+      "cloudCover": "eop:cloudCover",
+      "links": "eop:Links"
+    },
+    "type": "Feature",
+    // ist URI zu Linked Data
+    // https://scihub.copernicus.eu/dhus/search?q=S2B_MSIL1C_20180516T040539_N0206_R047_T51WXU_20180516T070218
+    "id": "http://localhost:9200/copernicus/metadata/S2B_MSIL1C_20180516T040539_N0206_R047_T51WXU_20180516T070218",
+    "bbox": {
+      // generieren min min max max
+      "@list": [
+        125.7466826711246,
+        70.86266237190664,
+        126.33899295000721,
+        71.18225922301176
+      ]
+    },
+    "geometry": {
+      "@type": "Polygon",
+      "coordinates": [
+        126.33899295000721,
+        71.16937130455153,
+        126.24534091370245,
+        71.12276042612561,
+        125.99388690756216,
+        70.99592255227462,
+        125.7466826711246,
+        70.8685525414662,
+        125.73539653802247,
+        70.86266237190664,
+        125.77857511249624,
+        71.18225922301176,
+        126.33899295000721,
+        71.16937130455153
+      ]
+    },
+    "properties": {
+        "type": "Properties",
+        "date": "2018-05-15T09:25:25.863Z",
+        "title": "S2B_MSIL1C_20180516T040539_N0206_R047_T51WXU_20180516T070218",
+        "identifier": "S2B_MSIL1C_20180516T040539_N0206_R047_T51WXU_20180516T070218",
+        // status raus
+        "acquisitionInformation": {
+          "type": "AcquisitionInformation",
+          "platform": {
+            "type": "Platform",
+            "id": "http://dbpedia.org/page/Sentinel-2",
+            "sameAs": "https://www.wikidata.org/wiki/Q4302480",
+            "platform": "Sentinel-2",
+            "platformSerialIdentifier": "Sentinel-2B"
+          },
+          "instrument": {
+            "type": "Instrument",
+            "id": "https://sentinels.copernicus.eu/web/sentinel/user-guides/sentinel-2-msi",
+            // Informationen zu Werten
+            "instrument": "Multi-Spectral Instrument",
+            "instrumentShortName": "MSI",
+            "operationalMode": "INS-NOBS"
+          },
+          "acquisitionParameters": {
+            "type": "AcquisitionParameters",
+            "orbitDirection": "DESCENDING",
+            "orbitNumber": 6222
+          }
+        },
+        "productInformation": {
+          "type": "ProductInformation",
+          "productType": "S2MSI1C",
+          "processingLevel": "Level-1C",
+          "size": "42.44 MB",
+          "cloudCover": 86.5599
+
+        },
+        "links": {
+          "openAccessHub": [
+            {
+              "href": "https://scihub.copernicus.eu/dhus/search?q=S2B_MSIL1C_20180516T040539_N0206_R047_T51WXU_20180516T070218",
+              "title": "Metadata"
+            },
+            {
+              "href":"https://scihub.copernicus.eu/dhus/odata/v1/Products('4d933eac-f9a2-4239-b2a3-84fc348f7be3')/$value",
+              "title": "Download"
+            },
+            {
+              "href": "https://scihub.copernicus.eu/dhus/odata/v1/Products('4d933eac-f9a2-4239-b2a3-84fc348f7be3')/Products('Quicklook')/$value",
+              "title": "Thumbnail"
+            }
+          ],
+          "codeDE": {
+          },
+          "other": {
+          }
+        }
+      }
+
+  }
+}

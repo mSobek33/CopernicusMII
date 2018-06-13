@@ -1,0 +1,7 @@
+2018-06-11 10:41:00,444 INFO Starting Script with configuration file: config.ini
+2018-06-11 10:41:00,444 INFO Starting Script with configuration file: config.ini
+2018-06-11 10:41:02,818 INFO Request successfull: https://catalog.code-de.org/opensearch/request/?httpAccept=application/atom%2Bxml&maximumRecords=150&startRecord=1&parentIdentifier=EOP:CODE-DE:S1_SAR_L1_GRD&startDate=2018-05-12T18:18:25.000Z&endDate=2018-06-11T10:41:00.000Z
+2018-06-11 10:41:04,468 INFO Request successfull: https://catalog.code-de.org/opensearch/request/?httpAccept=application/atom%2Bxml&maximumRecords=150&startRecord=1&parentIdentifier=EOP:CODE-DE:S1_SAR_L1_GRD&startDate=2018-05-12T18:18:25.000Z&endDate=2018-06-11T10:41:00.000Z
+2018-06-11 10:41:06,596 INFO Request successfull: https://catalog.code-de.org/opensearch/request/?httpAccept=application/atom%2Bxml&maximumRecords=150&startRecord=150&parentIdentifier=EOP:CODE-DE:S1_SAR_L1_GRD&startDate=2018-05-12T18:18:25.000Z&endDate=2018-06-11T10:41:00.000Z
+2018-06-11 10:41:08,762 INFO Request successfull: https://catalog.code-de.org/opensearch/request/?httpAccept=application/atom%2Bxml&maximumRecords=150&startRecord=300&parentIdentifier=EOP:CODE-DE:S1_SAR_L1_GRD&startDate=2018-05-12T18:18:25.000Z&endDate=2018-06-11T10:41:00.000Z
+2018-06-11 10:41:10,851 INFO Request successfull: https://catalog.code-de.org/opensearch/request/?httpAccept=application/atom%2Bxml&maximumRecords=150&startRecord=450&parentIdentifier=EOP:CODE-DE:S1_SAR_L1_GRD&startDate=2018-05-12T18:18:25.000Z&endDate=2018-06-11T10:41:00.000Z

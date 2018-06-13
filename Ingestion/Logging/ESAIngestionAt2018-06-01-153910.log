@@ -1,0 +1,5 @@
+2018-06-01 15:39:10,351 INFO Starting Script with configuration file: config.ini
+2018-06-01 15:39:10,352 INFO Last connection: 2018-05-29T14:37:46.000Z
+2018-06-01 15:39:10,976 INFO Total data: 39834
+2018-06-01 15:39:10,977 INFO Pages from initial count-request: 399
+2018-06-01 15:39:13,328 INFO https://scihub.copernicus.eu/dhus/search?q=ingestiondate:[2018-05-29T14:37:46.000Z%20TO%20NOW]&format=json&rows=100&start=0

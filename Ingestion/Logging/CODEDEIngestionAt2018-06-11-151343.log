@@ -1,0 +1,6 @@
+2018-06-11 15:13:43,237 INFO Starting Script with configuration file: config.ini
+2018-06-11 15:13:43,238 INFO Starting Script with configuration file: config.ini
+2018-06-11 15:13:43,240 INFO Starting Script with configuration file: config.ini
+2018-06-11 15:13:43,240 INFO Starting Script with configuration file: config.ini
+2018-06-11 15:13:45,256 INFO Request successfull: https://catalog.code-de.org/opensearch/request/?httpAccept=application/atom%2Bxml&maximumRecords=150&startRecord=1&parentIdentifier=EOP:CODE-DE:S1_SAR_L1_GRD&startDate=2018-06-11T00:30:50.000Z&endDate=2018-06-11T15:13:43.000Z
+2018-06-11 15:13:46,958 INFO Request successfull: https://catalog.code-de.org/opensearch/request/?httpAccept=application/atom%2Bxml&maximumRecords=150&startRecord=1&parentIdentifier=EOP:CODE-DE:S1_SAR_L1_GRD&startDate=2018-06-11T00:30:50.000Z&endDate=2018-06-11T15:13:43.000Z

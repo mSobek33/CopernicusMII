@@ -1,0 +1,406 @@
+2018-06-03 12:36:39,773 INFO Starting Script with configuration file: config.ini
+2018-06-03 12:36:39,773 INFO Starting Script with configuration file: config.ini
+2018-06-03 12:36:41,046 INFO Total data: 67648
+2018-06-03 12:36:41,046 INFO Pages from initial count-request: 677
+2018-06-03 12:36:41,957 INFO https://scihub.copernicus.eu/dhus/search?q=ingestiondate:[2018-05-29T14:37:46.000Z%20TO%20NOW]&format=json&rows=100&start=0
+2018-06-03 12:36:41,977 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:41,977 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:41,980 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:41,981 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:41,983 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:41,983 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:41,986 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:41,986 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:41,988 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:41,989 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:41,991 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:41,992 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:41,994 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:41,995 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:41,997 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:41,997 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,000 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,000 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,002 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,002 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,005 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,005 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,008 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,008 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,011 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,011 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,014 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,015 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,017 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,017 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,019 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,020 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,022 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,022 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,024 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,024 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,025 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,025 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,026 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,026 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,028 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,028 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,030 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,030 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,031 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,031 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,033 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,033 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,034 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,034 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,035 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,035 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,037 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,037 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,038 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,038 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,040 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,040 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,041 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,041 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,043 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,043 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,045 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,045 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,047 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,047 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,048 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,048 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,050 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,050 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,052 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,052 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,053 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,053 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,054 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,054 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,056 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,056 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,057 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,057 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,058 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,059 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,060 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,060 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,062 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,062 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,063 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,063 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,064 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,065 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,066 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,066 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,067 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,067 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,069 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,069 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,070 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,070 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,071 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,071 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,072 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,072 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,073 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,073 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,074 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,074 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,075 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,075 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,076 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,076 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,078 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,078 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,079 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,079 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,080 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,080 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,082 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,082 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,083 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,083 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,084 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,084 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,085 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,085 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,086 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,086 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,087 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,087 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,089 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,089 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,090 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,090 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,091 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,091 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,092 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,092 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,093 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,093 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,095 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,095 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,096 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,096 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,097 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,097 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,099 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,099 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,100 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,100 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,101 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,101 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,103 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,103 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,104 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,104 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,105 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,105 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,106 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,106 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,107 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,107 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,108 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,108 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,109 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,109 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,110 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,110 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,112 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,112 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,113 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,113 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,114 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,114 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,115 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,115 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,116 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,117 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,118 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,118 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,119 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,119 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,120 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,120 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,121 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,121 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,122 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,122 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,123 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,124 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,125 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,125 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,126 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,126 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,127 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,127 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,129 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,129 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,130 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,130 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:42,131 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:42,131 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,182 INFO https://scihub.copernicus.eu/dhus/search?q=ingestiondate:[2018-05-29T14:37:46.000Z%20TO%20NOW]&format=json&rows=100&start=100
+2018-06-03 12:36:43,202 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,203 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,205 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,205 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,207 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,207 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,209 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,209 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,211 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,211 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,213 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,213 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,215 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,215 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,217 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,217 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,219 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,219 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,221 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,221 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,223 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,223 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,224 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,224 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,226 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,226 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,227 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,227 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,229 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,229 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,230 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,230 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,232 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,232 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,233 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,233 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,235 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,235 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,236 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,236 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,237 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,238 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,239 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,239 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,240 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,240 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,241 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,241 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,242 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,243 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,244 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,244 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,246 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,246 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,247 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,247 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,249 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,249 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,250 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,250 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,251 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,251 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,253 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,253 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,254 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,254 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,255 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,256 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,257 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,257 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,258 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,258 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,259 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,259 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,260 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,260 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,262 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,262 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,263 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,263 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,264 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,264 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,265 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,266 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,267 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,267 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,268 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,268 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,269 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,269 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,270 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,270 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,271 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,271 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,273 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,273 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,274 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,274 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,275 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,275 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,276 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,277 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,278 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,278 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,279 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,280 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,281 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,281 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,282 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,282 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,283 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,283 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,284 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,284 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,285 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,285 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,286 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,286 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,287 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,288 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,288 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,289 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,289 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,290 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,290 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,291 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,291 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,292 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,292 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,293 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,294 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,294 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,295 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,295 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,296 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,296 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,298 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,298 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,299 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,299 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,300 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,301 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,302 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,302 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,303 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,303 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,304 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,304 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,305 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,305 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,307 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,307 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,308 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,308 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,309 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,309 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,311 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,311 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,313 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,314 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,316 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,316 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,318 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,319 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,321 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,321 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,323 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,323 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,325 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,326 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,328 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,328 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,331 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,331 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,334 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,334 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,336 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,337 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,339 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,340 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,342 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,342 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,345 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,345 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,348 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,348 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,350 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,351 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,353 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,354 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,356 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,356 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,358 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,358 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,360 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,360 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,363 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,363 INFO Starting Script with data list from file: data_uris.ini
+2018-06-03 12:36:43,366 INFO Starting Script with configuration file: data_uris.ini
+2018-06-03 12:36:43,366 INFO Starting Script with data list from file: data_uris.ini

@@ -1,0 +1,13 @@
+2018-06-11 13:11:27,432 INFO Starting Script with configuration file: config.ini
+2018-06-11 13:11:27,433 INFO Starting Script with configuration file: config.ini
+2018-06-11 13:11:27,434 INFO Starting Script with configuration file: config.ini
+2018-06-11 13:11:27,434 INFO Starting Script with configuration file: config.ini
+2018-06-11 13:11:28,325 INFO Request successfull: https://catalog.code-de.org/opensearch/request/?httpAccept=application/atom%2Bxml&maximumRecords=150&startRecord=1&parentIdentifier=EOP:CODE-DE:S1_SAR_L1_GRD&startDate=2018-06-11T13:10:36.000Z&endDate=2018-06-11T13:11:27.000Z
+2018-06-11 13:11:28,814 INFO Request successfull: https://catalog.code-de.org/opensearch/request/?httpAccept=application/atom%2Bxml&maximumRecords=150&startRecord=1&parentIdentifier=EOP:CODE-DE:S1_SAR_L1_SLC&startDate=2018-06-11T13:10:36.000Z&endDate=2018-06-11T13:11:27.000Z
+2018-06-11 13:11:29,185 INFO Request successfull: https://catalog.code-de.org/opensearch/request/?httpAccept=application/atom%2Bxml&maximumRecords=150&startRecord=1&parentIdentifier=EOP:CODE-DE:S1_SAR_L2_OCN&startDate=2018-06-11T13:10:36.000Z&endDate=2018-06-11T13:11:27.000Z
+2018-06-11 13:11:29,509 INFO Request successfull: https://catalog.code-de.org/opensearch/request/?httpAccept=application/atom%2Bxml&maximumRecords=150&startRecord=1&parentIdentifier=EOP:CODE-DE:S2_MSI_L1C&startDate=2018-06-11T13:10:36.000Z&endDate=2018-06-11T13:11:27.000Z
+2018-06-11 13:11:29,827 INFO Request successfull: https://catalog.code-de.org/opensearch/request/?httpAccept=application/atom%2Bxml&maximumRecords=150&startRecord=1&parentIdentifier=EOP:CODE-DE:S3_OLCI_L1&startDate=2018-06-11T13:10:36.000Z&endDate=2018-06-11T13:11:27.000Z
+2018-06-11 13:11:30,178 INFO Request successfull: https://catalog.code-de.org/opensearch/request/?httpAccept=application/atom%2Bxml&maximumRecords=150&startRecord=1&parentIdentifier=EOP:CODE-DE:S3_OLCI_L2_LAN&startDate=2018-06-11T13:10:36.000Z&endDate=2018-06-11T13:11:27.000Z
+2018-06-11 13:11:30,488 INFO Request successfull: https://catalog.code-de.org/opensearch/request/?httpAccept=application/atom%2Bxml&maximumRecords=150&startRecord=1&parentIdentifier=EOP:CODE-DE:S3_SLSTR_L1_RBT&startDate=2018-06-11T13:10:36.000Z&endDate=2018-06-11T13:11:27.000Z
+2018-06-11 13:11:30,801 INFO Request successfull: https://catalog.code-de.org/opensearch/request/?httpAccept=application/atom%2Bxml&maximumRecords=150&startRecord=1&parentIdentifier=EOP:CODE-DE:S3_SLSTR_L2_LST&startDate=2018-06-11T13:10:36.000Z&endDate=2018-06-11T13:11:27.000Z
+2018-06-11 13:11:30,812 INFO <Response [200]>
