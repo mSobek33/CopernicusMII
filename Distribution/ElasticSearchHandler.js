@@ -4,12 +4,13 @@ function search(client, es_id) {
         index: 'copernicus',
         type: 'metadata',
         id: es_id
-    }).then();
+    })
 }
 
 function closeConnection(client) {
     client.close();
 }
+
 
 function getFromIndex(client) {
     return client.get({
