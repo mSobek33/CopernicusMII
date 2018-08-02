@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ origRes.properties.title }}</title>
+
+    <script type="application/ld+json">{{ strRes|safe }}</script>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/main.css') }}">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
+          integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+          crossorigin=""/>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
+            integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
+            crossorigin=""></script>
+</head>
+<body vocab="http://schema.org/">
+
+<div id="firstHeading">
+    {{ origRes.properties.title }}
+</div>
+<div id="HTMLressource" style="height:10%;width:79%" typeof="Place">
+    <div id="thumbnail" style='float:left' property="photo">
+        <img src="{{ origRes.properties.links.openAccessHub[2].href }}" alt="THUMBNAIL"
+             style="margin-left:5%;margin-top:6%;margin-bottom:10%;width:600px;height:400px"/>
+    </div>
+    <div style='float:right'>
+        <div class="wrapper">
+            <div class="table">
+
+                <div class="row header blue">
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                </div>
+
+                <div class="row">
+                    <div class="cell"><a href="{{ ctx.eop }}platform"> platform </a></div>
+                    <div class="cell"><a href="{{ origRes.properties.acquisitionInformation.platform.id }}"> {{
+                        origRes.properties.acquisitionInformation.platform.platform }} </a></div>
+                </div>
+                {% if origRes.properties.acquisitionInformation.platform.platformSerialIdentifier is defined %}
+                <div class="row">
+                    <div class="cell"><a href="{{ ctx.eop }}platformSerialIdentifier"> platformSerialIdentifier </a>
+                    </div>
+                    <div class="cell">{{ origRes.properties.acquisitionInformation.platform.platformSerialIdentifier
+                        }}
+                    </div>
+                </div>
+                {% endif %}
+                <div class="row">
+                    <div class="cell"><a href="{{ ctx.eop }}instrument"> instrument </a></div>
+                    <div class="cell"><a href="{{ origRes.properties.acquisitionInformation.instrument.id }}"> {{
+                        origRes.properties.acquisitionInformation.instrument.instrument }}
+                        ({{origRes.properties.acquisitionInformation.instrument.instrumentShortName}}) </a></div>
+                </div>
+                {% if origRes.properties.acquisitionInformation.instrument.operationalMode is defined %}
+                <div class="row">
+                    <div class="cell"><a href="{{ ctx.eop }}operationalMode"> operationalMode </a></div>
+                    <div class="cell">{{ origRes.properties.acquisitionInformation.instrument.operationalMode }}</div>
+                </div>
+                {% endif %}
+                {% if origRes.properties.acquisitionInformation.instrument.polarisationChannels is defined %}
+                <div class="row">
+                    <div class="cell"><a href="{{ ctx.eop }}polarisationChannels"> polarisationChannels </a></div>
+                    <div class="cell">{{ origRes.properties.acquisitionInformation.instrument.polarisationChannels }}
+                    </div>
+                </div>
+                {% endif %}
+                <div class="row">
+                    <div class="cell"><a href="{{ ctx.eop }}orbitDirection"> orbitDirection </a></div>
+                    <div class="cell">{{ origRes.properties.acquisitionInformation.acquisitionParameters.orbitDirection
+                        }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="cell"><a href="{{ ctx.eop }}orbitNumber"> orbitNumber </a></div>
+                    <div class="cell">{{ origRes.properties.acquisitionInformation.acquisitionParameters.orbitNumber
+                        }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="cell"><a href="{{ ctx.eop }}productType"> productType </a></div>
+                    <div class="cell">{{ origRes.properties.productInformation.productType }}</div>
+                </div>
+                <div class="row">
+                    <div class="cell"><a href="{{ ctx.gj }}bbox"> bbox </a></div>
+                    <div id="bbox" class="cell" property="geo">{{ origRes.bbox }}</div>
+                </div>
+                <div class="row">
+                    <div class="cell"><a href="{{ ctx.eop }}size"> size </a></div>
+                    <div class="cell">{{ origRes.properties.productInformation.size }}</div>
+                </div>
+                {% if origRes.properties.productInformation.cloudCover is defined %}
+                <div class="row">
+                    <div class="cell"><a href="{{ ctx.eop }}cloudCover"> cloudCover </a></div>
+                    <div class="cell">{{  origRes.properties.productInformation.cloudCover }}
+                    </div>
+                </div>
+                {% endif %}
+
+            </div>
+
+            <div class="table">
+                <div class="row header green">
+                    <div class="cell">
+                        <a href="{{ ctx.openAccessHub }}"> openAccessHub </a>
+                    </div>
+                    <div class="cell">
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="cell">
+                        <a href="{{ origRes.properties.links.openAccessHub[0].href }}"> Metadata </a>
+                    </div>
+                    <div class="cell">
+                        <a href="{{ origRes.properties.links.openAccessHub[1].href }}"> Download </a>
+                    </div>
+
+                </div>
+            </div>
+            {% if origRes.properties.links.codeDE is defined %}
+            <div class="table">
+                <div class="row header green">
+                    <div class="cell">
+                        <a href="{{ ctx.codeDE }}"> CODE-DE </a>
+                    </div>
+                    <div class="cell">
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="cell" data-title="Links">
+                        <a href="{{ origRes.properties.links.codeDE[0].href }}"> Metadata </a>
+                    </div>
+                    <div class="cell" data-title="Links">
+                        <a href="{{ origRes.properties.links.codeDE[1].href }}"> Download </a>
+                    </div>
+
+                </div>
+            </div>
+            {% endif %}
+            {% if privateTableValues is defined %}
+            <div class="table">
+                <div class="row header green">
+                    <div class="cell">
+                        <a>Zugang zu anderen Quellen</a>
+                    </div>
+                    <div class="cell">
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="cell">
+                        <b>ID</b>
+                    </div>
+                    <div class="cell">
+                        <b>Pfad</b>
+                    </div>
+
+                </div>
+                {% for key, value in privateTableValues.items() %}
+                <div class="row">
+                    <div class="cell" data-title="Links">
+                        <a > {{key}} </a>
+                    </div>
+                    <div class="cell" data-title="Links">
+                        <a> {{value}} </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="cell" data-title="Links">
+                        <a >  </a>
+                    </div>
+                    <div class="cell" data-title="Links">
+                        <a> </a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+
+    </div>
+    <div id="map">
+
+        <script
+                src="http://cdn.leafletjs.com/leaflet-0.7/leaflet.js">
+        </script>
+        <script>
+            var map = L.map('map').setView([parseFloat('{{origRes.bbox[1]}}'), parseFloat('{{origRes.bbox[0]}}')], 4);
+            mapLink =
+                '<a href="http://openstreetmap.org">OpenStreetMap</a>';
+            L.tileLayer(
+                'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; ' + mapLink + ' Contributors',
+                    maxZoom: 18,
+                }).addTo(map);
+            // define array of points for polygon
+            var area = [[parseFloat('{{origRes.bbox[1]}}'), parseFloat('{{origRes.bbox[0]}}')], [parseFloat('{{origRes.bbox[3]}}'), parseFloat('{{origRes.bbox[2]}}')]];
+            // var area = mapPolygon(parseFloat('{{origRes.geometry.coordinates}}'));
+
+            // add polygon from area array points to map with some basic styling
+            L.rectangle(area, {color: 'purple', opacity: .6}).addTo(map);
+
+            function mapPolygon(poly) {
+                return poly.map(function (line) {
+                    return mapLineString(line)
+                })
+            }
+        </script>
+    </div>
+</div>
+
+
+</body>
+</html>

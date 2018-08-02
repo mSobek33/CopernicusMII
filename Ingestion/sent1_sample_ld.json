@@ -43,7 +43,7 @@
     "type": "Feature",
     // ist URI zu Linked Data
     // https://scihub.copernicus.eu/dhus/search?q=S1A_IW_OCN__2SSH_20180603T143502_20180603T143531_022193_026691_D156
-    "id": "http://localhost:9200/copernicus/metadata/S1A_IW_OCN__2SSH_20180603T143502_20180603T143531_022193_026691_D156",
+    "id": "http://localhost:5000/copernicus/metadata/S1A_IW_OCN__2SSH_20180603T143502_20180603T143531_022193_026691_D156",
     "bbox": {
       // generieren min min max max
       "@list": [
@@ -106,8 +106,6 @@
           }
         ],
         "codeDE": {
-        },
-        "other": {
         }
       }
     }

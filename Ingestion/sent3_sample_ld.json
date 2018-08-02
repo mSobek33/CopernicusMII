@@ -42,7 +42,7 @@
     "type": "Feature",
     // ist URI zu Linked Data
     // https://scihub.copernicus.eu/dhus/search?q=S3A_SR_1_SRA____20180603T160700_20180603T161700_20180603T181356_0599_032_040______SVL_O_NR_003
-    "id": "http://localhost:9200/copernicus/metadata/S3A_SR_1_SRA____20180603T160700_20180603T161700_20180603T181356_0599_032_040______SVL_O_NR_003",
+    "id": "http://localhost:5000/copernicus/metadata/S3A_SR_1_SRA____20180603T160700_20180603T161700_20180603T181356_0599_032_040______SVL_O_NR_003",
     "bbox": {
       // generieren min min max max
       "@list": [
@@ -72,7 +72,7 @@
         "instrument": {
           "type": "Instrument",
           "id": "https://sentinels.copernicus.eu/web/sentinel/user-guides/sentinel-3-altimetry",
-          "instrument": "Sar Radar ALtimeter",
+          "instrument": "Sar Radar Altimeter",
           "instrumentShortName": "SRAL"
         },
         "acquisitionParameters": {

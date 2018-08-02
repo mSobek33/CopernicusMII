@@ -11,11 +11,11 @@ class ParameterHandler:
     def setConfig(self):
         self.config.read(self.config_file)
         self.logger.info("Starting Script with configuration file: " + self.config_file)
-        if(self.config_file == 'config.ini'):
-            self.logger.info("Starting Script with configuration file: " + self.config_file)
+        #if(self.config_file == 'config.ini'):
+            #self.logger.info("Starting Script with configuration file: " + self.config_file)
             #self.logger.info("Last connection: " + str(self.config[self.datanode]['lastConnection']))
-        elif(self.config_file == 'data_uris.ini'):
-            self.logger.info("Starting Script with data list from file: " + self.config_file)
+        #elif(self.config_file == 'data_uris.ini'):
+            #self.logger.info("Starting Script with data list from file: " + self.config_file)
             #print(self.config['Sentinel-1']['id_Sentinel-1'])
             #print("Check")
         return self.config

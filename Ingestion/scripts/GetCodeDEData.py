@@ -29,10 +29,6 @@ for product in requestHandler.productList:
             startRecord = 1
         else:
             startRecord = 150 * count
-        print(count)
-        print(startFactor)
-        # letzter Durchlauf: count = startFactor-1
-        #print("Requests with Parameters: product =" + str(product) + " and startrecord = " + str(startRecord))
         requestHandler.sendRequestProgress(count, startFactor)
         output = requestHandler.makeRequest(product, startRecord, endDate)
         if(product == 'EOP:CODE-DE:S3_SLSTR_L2_LST'):
@@ -42,20 +38,20 @@ for product in requestHandler.productList:
                 log.logger.info(output.request)
         feed = requestHandler.generateDictFeedfromRequest()
         if 'entry' in feed:
-            #entries einzeln pro Seite abholen
             entries = requestHandler.getEntries(feed)
             if type(entries) is list:
                 for item in entries:
                     # search ID in ES-DB
                     title = item['title'].split('/')
                     lowerTitle = title[1].lower()
+                    print(title)
+                    print(lowerTitle)
                     #print(lowerTitle)
-                    id = ces.findEntryinES(lowerTitle)
+                    id = ces.findEntryinES(title[1])
+                    print(id)
                     if id is not None:
                         ces.updateIndexWithCodeDe(id, item['link'])
             else:
-                # das gleich ohne for schleife
-                # Muss: für jeden parentIdentifier eigenen Zeitpunkt
                 print("Keine Liste: " + entries)
                 print(entries)
 

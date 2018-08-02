@@ -1,5 +1,4 @@
-import sys, time, logging
-#sys.path.insert(0, '/Ingestion/classes')
+import sys, time
 from Ingestion.classes import ParameterHandler
 from Ingestion.classes import ESARequestHandler
 from Ingestion.classes import ElasticSearchHandler
@@ -13,7 +12,9 @@ from Ingestion.classes import COPlogger
 #logger = setLogger()
 log = COPlogger('ESAIngestionAt')
 paramHandler = ParameterHandler(log.logger, 'config.ini')
+config = paramHandler.setConfig()
 requestHandler = ESARequestHandler(log.logger, paramHandler)
+#lastCon =
 
 user = sys.argv[1]
 password = sys.argv[2]
@@ -24,17 +25,20 @@ ces = ElasticSearchHandler(log.logger, 'elastic', 'elastic')
 # main :
 for count in range(pages):
     start = count*100
-    print("Start: "+str(start))
-    requestHandler.makeRequest(str(start), user, password)
+    requestHandler.makeTimeSpanRequest(str(start), user, password)
     doc = requestHandler.getJson()
 
     for item in doc:
         if(list(item.keys())[0]=='title'):
             id = str(list(item.values())[0])
-        ldFormatter = LDFormatter(item, log.logger)
-        data = ldFormatter.createGeoJSONStructure()
+        ldFormatter = LDFormatter(log.logger)
+        data = ldFormatter.createGeoJSONStructure(item)
+        ces.indexData('copernicus', 'metadata', data, id)
 
-        ces.indexData('copernicus', 'metadata', id, data)
+
+print("Letzter erfolgreicher Request: " + time.strftime("%Y-%m-%dT%H:%M:%S.000Z"))
+paramHandler.updateConfig('ESA','lastConnection', time.strftime("%Y-%m-%dT%H:%M:%S.000Z"))
+
 
 log.logger.info("Process successfully finished")
 

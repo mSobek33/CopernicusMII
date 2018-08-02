@@ -26,9 +26,9 @@ class CodeDeRequestHandler:
 
         #endDate = time.strftime("%Y-%m-%dT%H:%M:%S.000Z")
         url = self.staticURLpart + "&startRecord=" + str(startRecord) + "&parentIdentifier=" + product + "&startDate=" + startDate + "&endDate=" + endDate
-        #print(url)
+        print(url)
         self.request = requests.get(url)
-
+        print(self.request.content)
         if(self.request.status_code == 503):
             self.logger.warning("Service is temporally not available")
             self.logger.warning("Last successful connection-date will be saved")

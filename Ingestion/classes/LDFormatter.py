@@ -4,8 +4,8 @@ from UliEngineering.Math.Coordinates import BoundingBox
 from Ingestion.classes import ParameterHandler
 
 class LDFormatter:
-    def __init__(self, jsonEntry, logger):
-        self.jsonEntry = jsonEntry
+    def __init__(self, logger):
+        #self.jsonEntry = jsonEntry
         self.logger = logger
         self.structure = ""
         self.dataHandler = ParameterHandler(self.logger, 'data_uris.ini')
@@ -14,44 +14,48 @@ class LDFormatter:
     def updateContext(self):
         None
 
-    def createGeoJSONStructure(self):
+    def createGeoJSONStructure(self, jsonEntry):
 
         # value for GeoJSON attr 'id'
-        if(list(self.jsonEntry.keys())[0]=='title'):
-            id = "http://localhost:9200/copernicus/metadata/" + str(list(self.jsonEntry.values())[0])
+        if(list(jsonEntry.keys())[0]=='title'):
+            id = "http://localhost:5000/index/" + str(list(jsonEntry.values())[0])
             print(id)
         # value for GeoJSON attr 'type'
         type = "Feature"
 
         # values for GeoJSON attr 'geometry' and 'bbox'
-        for value in self.jsonEntry['str']:
+        for value in jsonEntry['str']:
             if(value['name'] == 'footprint'):
                 #print(str(str(value).split("(")[0].split("'")[7]))
                 if(str(str(value).split("(")[0].split("'")[7]) == "POLYGON "):
-                    gType = "Polygon"
+                    gType = "polygon"
                     strCoordinates = str(value).split("(")[2].split(")")[0].split(",")
                 else:
-                    gType = "Multipolygon"
+                    gType = "multipolygon"
                     strCoordinates = str(value).split("(")[3].split(")")[0].split(",")
                 coords = np.asarray(strCoordinates)
                 n2Coords = list()
+                fn2Coords = list()
                 geomCoordinatesStr = list()
+
                 for coord in coords:
                     sCoord = coord.split(" ")
-                    # if MULTIPOLYGON
+
                     if(sCoord[0] == ''):
                         sCoord = [str for str in sCoord if str]
 
                     for coord2 in sCoord:
-                        geomCoordinatesStr.append(coord2)
-                    n2Coords.append(sCoord)#
-                # if MULTIPOLYGON
+                        #print(coord2)
+                        geomCoordinatesStr.append(float(coord2))
+
+                    fCoord = [float(x) for x in sCoord]
+                    n2Coords.append(sCoord)
+                    fn2Coords.append(fCoord)
+
                 if(geomCoordinatesStr[2] == ''):
                     geomCoordinatesStr = [str for str in geomCoordinatesStr if str]
-                geomCoordinates = list(map(float, geomCoordinatesStr))
                 aN2Coords = np.asarray(n2Coords, np.float)
                 bbox = [BoundingBox(aN2Coords).minx, BoundingBox(aN2Coords).miny, BoundingBox(aN2Coords).maxx, BoundingBox(aN2Coords).maxy]
-
                 #g = geocoder.google([0.278970,51.683979], method='reverse')
 
                 #print(g.city)
@@ -180,11 +184,11 @@ class LDFormatter:
         def createCoreAttributes(self):
             type = "Properties"
 
-            if(list(self.jsonEntry.keys())[0]=='title'):
-                id = str(list(self.jsonEntry.values())[0])
-                title = str(list(self.jsonEntry.values())[0])
+            if(list(jsonEntry.keys())[0]=='title'):
+                id = str(list(jsonEntry.values())[0])
+                title = str(list(jsonEntry.values())[0])
 
-            for date in self.jsonEntry['date']:
+            for date in jsonEntry['date']:
                 if(date['name'] == 'beginposition'):
                     #print(date['content'])
                     print(len(date['content'].split('.')))
@@ -201,8 +205,6 @@ class LDFormatter:
 
             coreAttributes = dict({"cType": type, "cId": id, "cTitle": title, "cDate": date})
 
-
-
             return coreAttributes
 
         def createPlatformStructure(self):
@@ -210,7 +212,7 @@ class LDFormatter:
             type = "Platform"
             platformSerialIdentifier = ""
 
-            for value in self.jsonEntry['str']:
+            for value in jsonEntry['str']:
                 if(value['name'] == 'platformname'):
                     platform = value['content']
                 if(value['name'] == 'platformserialidentifier'):
@@ -227,7 +229,7 @@ class LDFormatter:
 
             type = "Instrument",
 
-            for value in self.jsonEntry['str']:
+            for value in jsonEntry['str']:
                 if(value['name'] == 'instrumentname'):
                     instrumentName = value['content']
                 if(value['name'] == 'instrumentshortname'):
@@ -237,7 +239,7 @@ class LDFormatter:
 
 
             if(mission == "Sentinel-1"):
-                for value in self.jsonEntry['str']:
+                for value in jsonEntry['str']:
                     if(value['name'] == 'sensoroperationalmode'):
                         operationalMode =value['content']
                     if(value['name'] == 'polarisationmode'):
@@ -256,7 +258,7 @@ class LDFormatter:
 
             elif(mission == 'Sentinel-2'):
                 operationalMode = ""
-                for value in self.jsonEntry['str']:
+                for value in jsonEntry['str']:
                     if(value['name'] == 'sensoroperationalmode'):
                         operationalMode =value['content']
 
@@ -285,7 +287,7 @@ class LDFormatter:
 
             type = "AcquisitionParameters"
 
-            for value in self.jsonEntry['str']:
+            for value in jsonEntry['str']:
                 if(value['name'] == 'orbitdirection'):
                     if(value['content'] == "ascending"):
                         orbitDirection = "ASCENDING"
@@ -294,7 +296,7 @@ class LDFormatter:
                     else:
                         orbitDirection = value['content']
 
-            for value in self.jsonEntry['int']:
+            for value in jsonEntry['int']:
                 if(value['name'] == 'orbitnumber'):
                     orbitNumber = value['content']
 
@@ -309,7 +311,7 @@ class LDFormatter:
         def createProductInformation(self, mission):
 
             type = "ProductInformation"
-            for value in self.jsonEntry['str']:
+            for value in jsonEntry['str']:
                 if(value['name'] == 'producttype'):
                     productType = value['content']
                 if(value['name'] == 'size'):
@@ -324,13 +326,13 @@ class LDFormatter:
                 return productStructure
             elif(mission == 'Sentinel-2'):
                 cloudCover = 999
-                for value in self.jsonEntry['str']:
+                for value in jsonEntry['str']:
                     if(value['name'] == 'processinglevel'):
                         processingLevel = value['content']
-                for value in self.jsonEntry['double']:
-                    if(len(self.jsonEntry['double']) == 2):
-                        if(str(self.jsonEntry['double']).split("'")[3] == "cloudcoverpercentage"):
-                            cloudCover = str(self.jsonEntry['double']).split("'")[7]
+                for value in jsonEntry['double']:
+                    if(len(jsonEntry['double']) == 2):
+                        if(str(jsonEntry['double']).split("'")[3] == "cloudcoverpercentage"):
+                            cloudCover = str(jsonEntry['double']).split("'")[7]
                     else:
                         if(value['name'] == 'cloudcoverpercentage'):
                             cloudCover = value['content']
@@ -344,7 +346,7 @@ class LDFormatter:
                 }
                 return productStructure
             elif(mission == 'Sentinel-3'):
-                for value in self.jsonEntry['str']:
+                for value in jsonEntry['str']:
                     if(value['name'] == 'processinglevel'):
                         processingLevel = value['content']
                 productStructure = {
@@ -356,10 +358,10 @@ class LDFormatter:
                 return productStructure
 
         def createESALinks(self):
-            selfLink = "https://scihub.copernicus.eu/dhus/search?q=" + str(list(self.jsonEntry.values())[0])
+            selfLink = "https://scihub.copernicus.eu/dhus/search?q=" + str(list(jsonEntry.values())[0])
             selfTitle = "Metadata"
 
-            for value in self.jsonEntry['link']:
+            for value in jsonEntry['link']:
                 if('rel' in value):
                     if(value['rel'] == 'icon'):
                         thumbnailLink = value['href']
@@ -390,15 +392,16 @@ class LDFormatter:
                              "bbox":
                                  bbox,
                              "geometry": {
-                               "type": gType,
-                               "coordinates": geomCoordinates
+                               "type": "polygon",
+                               #"coordinates": geomCoordinates
+                               "coordinates": [fn2Coords]
                              },
                              "properties": {
                                  "type": self.coreAttributes['cType'],
                                  "date": self.coreAttributes['cDate'],
                                  "title": self.coreAttributes['cTitle'],
                                  "identifier": self.coreAttributes['cId'],
-                                 "AcquisitionInformation": {
+                                 "acquisitionInformation": {
                                      "type": "AcquisitionInformation",
                                      "platform": {
                                          "type": self.platformAttributes['pType'],
@@ -431,6 +434,7 @@ class LDFormatter:
                                  }
                              }
                          }
+        print(self.structure)
         self.structure = json.dumps(self.structure)
 
         return self.structure
