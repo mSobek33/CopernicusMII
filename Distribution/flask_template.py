@@ -1,7 +1,14 @@
-from flask import Flask, render_template, request, Response, make_response
-from pyld import jsonld
+from flask import Flask, render_template, request, make_response
 import json
-from Ingestion.classes import ElasticSearchHandler
+
+if __package__ is None:
+    import sys
+    from os import path
+    sys.path.append(path.dirname(path.dirname(path.abspath(__file__))))
+    from Ingestion.classes import ElasticSearchHandler
+else:
+    from Ingestion.classes import ElasticSearchHandler
+
 app = Flask(__name__)
 
 @app.route("/")
@@ -22,7 +29,6 @@ def landing(page):
     response.headers["Content-Type"] = "application/xml"
 
     return response
-    #return "<h1>Landing Page</h1>"
 
 @app.route('/index/<id>')
 def show_id(id):
